@@ -75,7 +75,7 @@ void setup()
 {
  Serial.begin(115200);
  
- client.setServer(mqtt_server, 1883);
+ client.setServer(mqtt_server, 1883); // change port number as mentioned in your cloudmqtt console
  client.setCallback(callback);
  
  pinMode(ledPin5, OUTPUT);
